@@ -7,11 +7,11 @@ public class Products {
     private double poundsPrice;
     private double euroPrice;
 
-    public Products(String productName, double dolarsPrice, double poundsPrice, double euroPrice) {
-        this.productName = productName;
-        this.dolarsPrice = dolarsPrice;
-        this.poundsPrice = poundsPrice;
-        this.euroPrice = euroPrice;
+    public Products(String _productName, double _dolarsPrice, double _poundsPrice, double _euroPrice) {
+        this.productName = _productName;
+        this.dolarsPrice = _dolarsPrice;
+        this.poundsPrice = _poundsPrice;
+        this.euroPrice = _euroPrice;
     }
 
     public double getDolarsPrice() {

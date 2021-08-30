@@ -2,9 +2,9 @@
   "dataSet": [
     {
       "productName" : "Macbook Air",
-      "dolarsPrice": 602.00,
-      "poundsPrice" : 454.10,
-      "euroPrice": 518.16
+      "dolarsPrice": 1202.00,
+      "poundsPrice" : 906.69,
+      "euroPrice": 1034.60
     },
     {
       "productName" : "iPhone",

@@ -27,8 +27,11 @@ public class Utils {
             if (Character.isDigit(caracter[i])){
                 n+=caracter[i];
             }
-            if (caracter[i] == ','){
+            if (caracter[i] == '.'){
                 n+=caracter[i];
+            }
+            if (caracter[i]=='\n'){
+                break;
             }
         }
         double valorPrecio = Double.parseDouble(n);

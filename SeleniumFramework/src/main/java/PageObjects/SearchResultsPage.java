@@ -11,11 +11,8 @@ public class SearchResultsPage extends BasePage {
     private By resultsSelector = By.cssSelector(".product-thumb");
     private By itemName = By.xpath("//div[@class='product-thumb']//h4/a");
     private By noResultsSelector = By.id("content");
-    private By currencyEuro = By.name("EUR");
-    private By currencyPound = By.name("GBP");
-    private By currencyDollar = By.name("USD");
-    private By currencyOptions = By.xpath("//div[@class='btn-group']//i");
-    private By itemPrice = By.xpath("//span[@class='price-new']");
+    private By itemPrice = By.xpath("//p[@class='price']");
+
 
     public SearchResultsPage(WebDriver driver){
         super(driver);
@@ -29,22 +26,6 @@ public class SearchResultsPage extends BasePage {
 
     public void ClickOnProductLink(){
         this.driver.findElement(itemName).click();
-    }
-
-    public void ClickOnCurrencyOptions(){
-        this.driver.findElement(currencyOptions).click();
-    }
-
-    public void ClickOnUSDCurrencyOption(){
-        this.driver.findElement(currencyDollar).click();
-    }
-
-    public void ClickOnEURCurrencyOption(){
-        this.driver.findElement(currencyEuro).click();
-    }
-
-    public void ClickOnGBPCurrencyOption(){
-        this.driver.findElement(currencyPound).click();
     }
 
     public String getItemPriceAmount(){
